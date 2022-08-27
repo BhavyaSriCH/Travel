@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel World</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>   
+
+<style> 
+html, body {margin:0px; padding: 0px;}
+
+nav {
+    background-color: #34495e;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 999;
+}
+
+#logo {height: 80px; margin-left: 20px;}
+
+.wrapper {
+    padding: 50px 50px;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.right {float: right !important;}
+
+.parent {
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    float:left;
+    display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.bg-one {background-image: url(C:/Users/bhavy/OneDrive/Desktop/TravelPictures/Paris.jfif);}
+.bg-two {background-image: url(C:/Users/bhavy/OneDrive/Desktop/TravelPictures/London.jfif);}
+.bg-three {background-image: url(C:/Users/bhavy/OneDrive/Desktop/TravelPictures/Kerala.jfif);}
+.bg-four {background-image: url(C:/Users/bhavy/OneDrive/Desktop/TravelPictures/iceland.jfif);}
+.bg-five {background-image: url(C:/Users/bhavy/OneDrive/Desktop/TravelPictures/ArunachalPradesh.jfif);}
+.bg-six {background-image: url(C:/Users/bhavy/OneDrive/Desktop/TravelPictures/Maldives.jfif);}
+
+
+a {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+    .wrapper {padding: 20px 20px;}
+}
+
+
+.hello {display: none}
+.para{font-size:50px;
+color: rgb(185, 140, 19);}
+    </style>
+    </head>
+<body> 
+
+ <div class="container-fluid mb-5">
+    <div class="row ">
+  <div class="col-md-2 pt-4" title="Menu" aria-label="Menu">
+ <svg viewBox="0 0 24 24" width="5em" height="5em" class="four" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg></div>
+   <div class="col-md-5 ps-0">
+    <h1 class="five"><picture><img style="height:150px; width:500px" class="six pb-5" src="C:/Users/bhavy/OneDrive/Desktop/TravelPictures/logo.jfif" alt="Tripadvisor">
+    </picture>
+    </h1></div>
+    <div class="col-md-5 pt-6 pe-1"><form role="search" class="xyz" action="/Search">
+    <input type="search" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" required="" name="q" class="qjfqs _G B- z _J Cj R0" title="Search" role="searchbox" aria-label="Search" aria-controls="typeahead_results" aria-autocomplete="list" value="">
+    <input type="hidden" name="searchSessionId" value="2820E075A3108768EB09C1599ECC28071661364257398ssid">
+    <input type="hidden" name="searchNearby" value="false"><button type="button" class="riJbp _G _H B- _S t u j Cj lDGWU" title="Back" aria-label="Back">
+    <svg viewBox="0 0 24 24" width="1em" height="1em" class="d Vb UmNoP">
+    <path d="M10.304 3.506l-8.048 8.047a.644.644 0 000 .895l8.048 8.047a.624.624 0 00.883 0l.882-.883a.624.624 0 000-.883l-5.481-5.48h14.714a.625.625 0 00.623-.625v-1.248a.624.624 0 00-.623-.624H6.588l5.481-5.481a.624.624 0 000-.883l-.882-.883a.623.623 0 00-.883-.004c-.001.002-.002.003 0 .005z"></path>
+    </svg>
+    </button>
+    <button type="submit" formaction="/Search" class="riJbp _G _H B- _S t u j Cj PGlrP" title="Search" aria-label="Search" tabindex="-1"><svg viewBox="0 0 24 24" width="1em" height="1em" class="d Vb UmNoP">
+    <path d="M22 20.514l-5.517-5.519a8.023 8.023 0 001.674-4.904c0-4.455-3.624-8.079-8.079-8.079C5.624 2.012 2 5.636 2 10.091s3.624 8.079 8.079 8.079a8.03 8.03 0 004.933-1.695l5.512 5.514L22 20.514zm-11.921-4.431c-3.305 0-5.993-2.688-5.993-5.992s2.688-5.992 5.993-5.992a6 6 0 015.992 5.992 6 6 0 01-5.992 5.992z">
+    </path>
+    </svg>
+    </button>
+    </form>
+    </div>
+    </div>
+    <p class="para">Choose your holiday spot today !</p>
+  <div class="wrapper">
+  <div class="parent" onclick="">
+    <div class="child bg-one">
+      <a href="#">Paris</a>
+    </div>
+  </div>
+
+  <div class="parent right" onclick="">
+    <div class="child bg-two">
+      <a href="#">London</a>
+    </div>
+  </div>
+
+  <div class="parent" onclick="">
+    <div class="child bg-three">
+      <a href="#">Kerala</a>
+    </div>
+  </div>
+
+  <div class="parent right" onclick="">
+    <div class="child bg-four">
+      <a href="#">iceland</a>
+    </div>
+  </div>
+
+  <div class="parent" onclick="">
+    <div class="child bg-five">
+      <a href="#">ArunachalPradesh</a>
+    </div>
+  </div>
+
+  <div class="parent right" onclick="">
+    <div class="child bg-six">
+      <a href="#">Maldives</a>
+    </div>
+  </div>
+</div>
+    
+</body>
+   
+</html>
